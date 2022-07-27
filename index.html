@@ -1,102 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pluse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pluse</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="./scss/style.css" />
-</head>
-
-<body>
-  <div class="overflow-x-hidden relative">
-    <header class="relative">
-      <div class="overlay md-hidden"></div>
-      <div class="container bg-white nav-padding">
-        <nav class="navbar">
-          <a class="pulse-logo" href="#"><img src="./images/pulse-logo.svg" alt="pulse-logo" /></a>
-          <div class="menu-btn block md-hidden">
-            <div class="menu-btn--hamburger"></div>
-          </div>
-          <ul class="hidden">
-            <li>Features</li>
-            <li>Customer Stories</li>
-            <li>Pricing</li>
-            <li>Blog</li>
-            <li>Sign up</li>
-          </ul>
-        </nav>
-      </div>
-      <div class="container mobile-nav mobile-nav--padding md-hidden absolute">
-        <div class="nav-list">
-          <ul>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Customer Stories</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#"><button class="btn-signUp">Sign Up</button></a></li>
-          </ul>
-        </div>
-      </div>
-    </header>
-    <main class="content">
-      <div class="gb-lightAquamarine">
-        <div class="container first-content--padding">
-          <div class="first-content">
-            <h1>Try Pulse free for 30 days.</h1>
-            <p class="p">See why Pulse is the best way to monitor your cash flow. Sign up for any plan and try Pulse
-              absolutely free
-              for 30 days.</p>
-          </div>
-        </div>
-        <div class="container">
-          <div class="pricing-blocks">
-            <div class="first-block">
-              <h2>These are what we call the Pulse Basics. They’re what every customer gets.</h2>
-              <ul>
-                <li>Manage cash flow on a daily, weekly, monthly, or yearly basis</li>
-                <li>Forecast growth with recurring income or expenses that scale automatically</li>
-                <li>Works with any currency</li>
-                <li>See Money In and Money Out, categorize transactions, and run helpful reports</li>
-                <li>Toggle entries and accounts on and off to game out different scenarios</li>
-              </ul>
-              <br>Just need the Pulse Basics? <br><span>Get them now</span> for $29 per month.</p>
+  <body>
+    <div class="overflow-x-hidden relative">
+      <header class="relative bg-lightAquamarine">
+        <div class="overlay md-hidden"></div>
+        <div class="container bg-white nav-padding">
+          <nav class="navbar">
+            <a class="pulse-logo" href="#"
+              ><img src="./images/pulse-logo.svg" alt="pulse-logo"
+            /></a>
+            <div class="menu-btn block md-hidden">
+              <div class="menu-btn--hamburger"></div>
             </div>
-            <div class="second-block">
-              <div class="block-banner">Recommended</div>
-              <div class="block-content">
-                <div class="block-content--main">
-                  <h1>Small Business Plan</h1>
-                  <h6>$59 per month</h6>
-                  <p>you get pluse basic, plus:</p>
-                </div>
+            <ul class="hidden">
+              <li class="margin-right">Features</li>
+              <li class="margin-right">Customer Stories</li>
+              <li class="margin-right">Pricing</li>
+              <li class="margin-right">Blog</li>
+              <li><button>Sign up</button></li>
+            </ul>
+          </nav>
+        </div>
+        <div
+          class="container mobile-nav mobile-nav--padding md-hidden absolute"
+        >
+          <div class="nav-list">
+            <ul>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Customer Stories</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Support</a></li>
+              <li>
+                <a href="#"><button class="btn-signUp">Sign Up</button></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <main class="content">
+        <div class="bg-lightAquamarine">
+          <div class="container first-content--padding">
+            <div class="first-content">
+              <h1>Try Pulse free for 30 days.</h1>
+              <p class="p">
+                See why Pulse is the best way to monitor your cash flow. Sign up
+                for any plan and try Pulse absolutely free for 30 days.
+              </p>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="pricing-blocks">
+              <div class="first-block">
+                <h2>
+                  These are what we call the Pulse Basics. They’re what every
+                  customer gets.
+                </h2>
                 <ul>
-                  <li>Manage cash flow across multiple financial accounts</li>
-                  <li>Invite your investors, book keeper, or management team to see reports or manage cash flow</li>
-                  <li>Integrate with QuickBooks Online for more accurate cash flow</li>
-                  <li>Track your actual cash flow alongside your projected cash flow</li>
+                  <li>
+                    Manage cash flow on a daily, weekly, monthly, or yearly
+                    basis
+                  </li>
+                  <li>
+                    Forecast growth with recurring income or expenses that scale
+                    automatically
+                  </li>
+                  <li>Works with any currency</li>
+                  <li>
+                    See Money In and Money Out, categorize transactions, and run
+                    helpful reports
+                  </li>
+                  <li>
+                    Toggle entries and accounts on and off to game out different
+                    scenarios
+                  </li>
                 </ul>
-                <button>Sign Up Now</button>
+                <p>
+                  Just need the Pulse Basics? <br /><a href="#">Get them now</a>
+                  for $29 per month.
+                </p>
+              </div>
+              <div class="second-block">
+                <div class="block-banner">Recommended</div>
+                <div class="block-content">
+                  <div class="block-content--main">
+                    <h1>Small Business Plan</h1>
+                    <h6>$59 per month</h6>
+                    <p>you get pluse basic, plus:</p>
+                  </div>
+                  <ul>
+                    <li>Manage cash flow across multiple financial accounts</li>
+                    <li>
+                      Invite your investors, book keeper, or management team to
+                      see reports or manage cash flow
+                    </li>
+                    <li>
+                      Integrate with QuickBooks Online for more accurate cash
+                      flow
+                    </li>
+                    <li>
+                      Track your actual cash flow alongside your projected cash
+                      flow
+                    </li>
+                  </ul>
+                  <button>Sign Up Now</button>
+                </div>
+              </div>
+              <div class="third-block border-box block-margin">
+                <div class="block-banner--second">
+                  Complex business with multiple financial accounts, currencies,
+                  or auditing needs?
+                </div>
+                <div class="block-content">
+                  <div class="block-content--main">
+                    <h1 class="front-weight--medium">Unlock Extra Features</h1>
+                    <h6>$89 per month</h6>
+                    <p>Get it all, plus:</p>
+                  </div>
+                  <ul>
+                    <li>
+                      Manage cash flow across unlimited financial accounts
+                    </li>
+                    <li>
+                      Convert to any currency for localized cash flow reporting
+                      and projections
+                    </li>
+                    <li>
+                      Attach invoices or contracts to your cash flow entries for
+                      accountability and auditing
+                    </li>
+                  </ul>
+                  <button>Try Premium</button>
+                </div>
               </div>
             </div>
-            <div class="third-block">
-                
+          </div>
+
+          <div class="container">
+            <div class="slogan">
+              <img src="./images/subvert-avatar.png" alt="subvert-avatar" />
+              <h1>
+                “Pulse is worth every penny because it empowers business owners
+                with critical financial insight and knowledge.”
+              </h1>
+              <p>Subvert Marketing, Inc.</p>
+            </div>
+          </div>
+
+          <div class="container bg-white--fqa">
+            <div class="fqa">
+              <h2>FQA</h2>
+              <div class="fqa-blocks">
+                <div class="block-item mr">
+                  <h4>How does the 30-day free trial work?</h4>
+                  <p>
+                    You can use Pulse absolutely free for 30 days. After 30
+                    days, we will charge the credit card you used when you sign
+                    up. If you choose to cancel your account before your trial
+                    ends, your card will not be charged.
+                  </p>
+                </div>
+                <div class="block-item ml">
+                  <h4>
+                    If I upgrade an existing account, do I get another free
+                    trial?
+                  </h4>
+                  <p>
+                    Brand new accounts are the only ones eligible for a 30-day
+                    free trial. If you upgrade an existing account, your credit
+                    card will be billed the new amount on the date of your next
+                    billing cycle.
+                  </p>
+                </div>
+                <div class="block-item mr">
+                  <h4>What is a “Financial Account”?</h4>
+                  <p>
+                    Financial Accounts are a grouping of income and expense
+                    items that can be used for tracking or reporting purposes.
+                    <br />
+                    <br />
+
+                    They’re designed to be flexible and can be used to
+                    differentiate between bank accounts, companies, individuals
+                    or between personal and business entries.
+                  </p>
+                </div>
+                <div class="block-item ml">
+                  <h4>Do I have to commit to a long-term contract?</h4>
+                  <p>
+                    No. There is no contract when you use Pulse, other than
+                    agreeing to our Terms of Service.
+                  </p>
+                </div>
+                <div class="block-item mr">
+                  <h4>
+                    Will I be able to cancel my account if I don’t use Pulse?
+                  </h4>
+                  <p>
+                    Yes – you can cancel your account at any time. To cancel
+                    your account, go to your billing page and click on “Please
+                    cancel my account” at the bottom of the page. The account
+                    owner is the only one who can cancel an account. An email
+                    request to delete an account is not considered cancellation.
+                  </p>
+                </div>
+                <div class="block-item ml">
+                  <h4>What types of payments do you accept?</h4>
+                  <p>
+                    We accept payments made online using Visa, Mastercard,
+                    Discover, and American Express.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </main>
-  </div>
+      </main>
 
-  <script src="./script.js"></script>
-</body>
+      <footer class="bg-black">
+        <div class="container">
+          <div class="footer-content">
+            <a class="pulse-logo" href="#"
+              ><img src="./images/pulse-logo.svg" alt="pulse-logo"
+            /></a>
+            <button><a href="#">Sign Up for a Free 30-Day Trial</a></button>
+            <div class="footer-blocks">
+              <ul class="footer-block--items">
+                <li><a href="#" class="footer-item--title">Product</a></li>
+                <li><a href="#" class="footer-item--subtitle">Features</a></li>
+                <li><a href="#" class="footer-item--subtitle">Pricing</a></li>
+                <li><a href="#" class="footer-item--subtitle">Sign Up</a></li>
+              </ul>
+              <ul class="footer-block--items">
+                <li><a href="#" class="footer-item--title">Company</a></li>
+                <li>
+                  <a href="#" class="footer-item--subtitle">Customer Stories</a>
+                </li>
+                <li><a href="#" class="footer-item--subtitle">About</a></li>
+                <li><a href="#" class="footer-item--subtitle">Contact</a></li>
+              </ul>
+              <ul class="footer-block--items">
+                <li><a href="#" class="footer-item--title">Product</a></li>
+                <li><a href="#" class="footer-item--subtitle">Resources</a></li>
+                <li><a href="#" class="footer-item--subtitle">Support</a></li>
+                <li><a href="#" class="footer-item--subtitle">Blog</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
+        <div class="container">
+          <div class="copyright">
+            <p>
+              ©2019 Pulseapp.com, Inc. All Rights Reserved |
+              <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a> |
+              <a href="#">EU Privacy</a>
+            </p>
+            <p>
+              Pulse is made by <a href="#">Simple Focus</a>. We also make
+              <a href="#">Ballpark</a>, <a href="#">Ballpark</a>, and
+              <a href="#">Sifter</a>, and <a href="#">Curated</a>.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <a href="#">
+      <button class="contact-btn">CONTACT US</button>
+    </a>
+
+    <script src="./script.js"></script>
+  </body>
 </html>

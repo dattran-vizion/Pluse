@@ -61,8 +61,37 @@ a {
 
 .bg-white {
   background-color: $white;
+
+  @include tablet {
+    background-color: $lightAquamarine;
+  }
+
+  @include desktop {
+    background-color: $lightAquamarine;
+  }
 }
 
-.gb-lightAquamarine {
+.bg-white--fqa {
+  background-color: $white;
+}
+
+.bg-lightAquamarine {
   background-color: $lightAquamarine;
+}
+
+.bg-black {
+  background-color: $black;
+}
+
+.contact-btn {
+  font-size: 0.875rem;
+  font-weight: 700;
+  font-family: "Helvitica Neue", sans-serif;
+  color: $white;
+  background-color: $darkGreen;
+  padding: 0.6em 1.2em;
+  border: 2px solid $white;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 }

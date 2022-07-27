@@ -114,6 +114,11 @@ nav {
   }
 }
 
+button {
+  font-weight: 700;
+  font-family: "Work Sans", sans-serif;
+}
+
 .btn-signUp {
   background: linear-gradient(to right, $darkGreen, $lightGreen);
   color: $black;
@@ -128,5 +133,87 @@ nav {
   &:hover {
     opacity: 0.7;
     color: $white;
+  }
+}
+
+@include tablet {
+  .nav-padding {
+    padding: 3rem 1.5rem;
+  }
+
+  .md-hidden {
+    display: none;
+  }
+
+  .hidden {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      list-style: none;
+      font-size: 1rem;
+      font-weight: 700;
+      color: $darkGreen;
+      cursor: pointer;
+
+      button {
+        font-size: 1rem;
+        font-weight: 700;
+        color: $darkGreen;
+        background-color: $lightAquamarine;
+        border: 2px solid $darkGreen;
+        padding: 0.25rem 1rem;
+      }
+
+      &:hover {
+        color: $black;
+      }
+    }
+
+    .margin-right {
+      margin-right: 2.5rem;
+    }
+  }
+}
+
+@include desktop {
+  .nav-padding {
+    padding: 3rem 1.5rem;
+  }
+
+  .md-hidden {
+    display: none;
+  }
+
+  .hidden {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      list-style: none;
+      font-size: 1rem;
+      font-weight: 700;
+      color: $darkGreen;
+      cursor: pointer;
+
+      button {
+        font-size: 1rem;
+        font-weight: 700;
+        color: $darkGreen;
+        background-color: $lightAquamarine;
+        border: 2px solid $darkGreen;
+        padding: 0.25rem 1rem;
+      }
+
+      &:hover {
+        color: $black;
+      }
+    }
+
+    .margin-right {
+      margin-right: 2.5rem;
+    }
   }
 }
