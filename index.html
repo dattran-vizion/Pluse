@@ -1,54 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Taviraj:ital@1&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Pluse</title>
-  </head>
-  <body>
-    <div class="overflow-x-hidden relative">
-      <div class="overlay"></div>
-      <header>
-        <div class="container py-4 px-5 bg-white">
-          <nav class="navbar">
-            <a class="pulse-logo" href="#"
-              ><img src="./images/pulse-logo.svg" alt="pulse-logo"
-            /></a>
-            <div class="menu-btn block md-hidden">
-              <div class="menu-btn--hamburger"></div>
-            </div>
-            <ul class="hidden">
-              <li>Features</li>
-              <li>Customer Stories</li>
-              <li>Pricing</li>
-              <li>Blog</li>
-              <li>Sign up</li>
-            </ul>
-          </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pluse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./scss/style.css" />
+</head>
+
+<body>
+  <div class="overflow-x-hidden relative">
+    <header class="relative">
+      <div class="overlay md-hidden"></div>
+      <div class="container bg-white nav-padding">
+        <nav class="navbar">
+          <a class="pulse-logo" href="#"><img src="./images/pulse-logo.svg" alt="pulse-logo" /></a>
+          <div class="menu-btn block md-hidden">
+            <div class="menu-btn--hamburger"></div>
+          </div>
+          <ul class="hidden">
+            <li>Features</li>
+            <li>Customer Stories</li>
+            <li>Pricing</li>
+            <li>Blog</li>
+            <li>Sign up</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container mobile-nav mobile-nav--padding md-hidden absolute">
+        <div class="nav-list">
+          <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Customer Stories</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#"><button class="btn-signUp">Sign Up</button></a></li>
+          </ul>
         </div>
-        <div class="container p-5 md-hidden">
-          <div class="mobile-nav">
-            <div class="main-nav--main">
-              <ul class="">
-                <li><a href="#"></a>Features</li>
-                <li><a href="#"></a>Customer Stories</li>
-                <li><a href="#"></a>Pricing</li>
-                <li><a href="#"></a>Blog</li>
-                <li><a href="#"></a>Contact</li>
-                <li><a href="#"></a>Support</li>
-                <li><a href="#"></a>Sign up</li>
+      </div>
+    </header>
+    <main class="content">
+      <div class="gb-lightAquamarine">
+        <div class="container first-content--padding">
+          <div class="first-content">
+            <h1>Try Pulse free for 30 days.</h1>
+            <p class="p">See why Pulse is the best way to monitor your cash flow. Sign up for any plan and try Pulse
+              absolutely free
+              for 30 days.</p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="pricing-blocks">
+            <div class="first-block">
+              <h2>These are what we call the Pulse Basics. They’re what every customer gets.</h2>
+              <ul>
+                <li>Manage cash flow on a daily, weekly, monthly, or yearly basis</li>
+                <li>Forecast growth with recurring income or expenses that scale automatically</li>
+                <li>Works with any currency</li>
+                <li>See Money In and Money Out, categorize transactions, and run helpful reports</li>
+                <li>Toggle entries and accounts on and off to game out different scenarios</li>
               </ul>
+              <br>Just need the Pulse Basics? <br><span>Get them now</span> for $29 per month.</p>
+            </div>
+            <div class="second-block">
+              <div class="block-banner">Recommended</div>
+              <div class="block-content">
+                <div class="block-content--main">
+                  <h1>Small Business Plan</h1>
+                  <h6>$59 per month</h6>
+                  <p>you get pluse basic, plus:</p>
+                </div>
+                <ul>
+                  <li>Manage cash flow across multiple financial accounts</li>
+                  <li>Invite your investors, book keeper, or management team to see reports or manage cash flow</li>
+                  <li>Integrate with QuickBooks Online for more accurate cash flow</li>
+                  <li>Track your actual cash flow alongside your projected cash flow</li>
+                </ul>
+                <button>Sign Up Now</button>
+              </div>
+            </div>
+            <div class="third-block">
+                
             </div>
           </div>
         </div>
-      </header>
-    </div>
-    <script src="./script.js"></script>
-  </body>
+      </div>
+    </main>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
 </html>
