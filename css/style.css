@@ -249,7 +249,7 @@ button {
     color: #00ad6a;
     background-color: #eafaf1;
     border: 2px solid #00ad6a;
-    padding: 0.25rem 1rem;
+    padding: 0.40625rem 1rem;
   }
   .hidden li:hover {
     color: #080c16;
@@ -593,4 +593,13 @@ button {
   font-weight: 400;
   color: #83858a;
   text-decoration: underline;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer-content {
+    padding: 6rem 0;
+  }
+  .footer-content img {
+    width: 134.45%;
+  }
 }/*# sourceMappingURL=style.css.map */
