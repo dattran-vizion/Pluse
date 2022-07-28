@@ -98,8 +98,8 @@ a {
   padding: 0.6em 1.2em;
   border: 2px solid #fcfcfc;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 22px;
+  right: 22px;
 }
 
 header {
@@ -278,6 +278,7 @@ button {
     list-style: none;
     font-size: 1rem;
     font-weight: 700;
+    line-height: 1.5rem;
     color: #00ad6a;
     cursor: pointer;
   }
@@ -287,7 +288,7 @@ button {
     color: #00ad6a;
     background-color: #eafaf1;
     border: 2px solid #00ad6a;
-    padding: 0.25rem 1rem;
+    padding: 0.4rem 1rem;
   }
   .hidden li:hover {
     color: #080c16;
@@ -400,6 +401,7 @@ button {
 .block-content li {
   color: #080c16;
   font-size: 1rem;
+  letter-spacing: -0.5px;
   padding: 0.5rem 0;
 }
 .block-content button {
@@ -501,7 +503,7 @@ button {
     padding-top: 0;
   }
   .first-content h1 {
-    max-width: 70%;
+    max-width: 30rem;
     font-size: 3.75rem;
     line-height: 3.75rem;
     letter-spacing: -2px;
@@ -537,11 +539,12 @@ button {
   }
   .first-content {
     text-align: center;
-    margin: 0 20rem 5rem;
+    margin: 0 15rem 5rem;
   }
   .first-content h1 {
+    width: 35rem;
     font-size: 3.75rem;
-    margin-bottom: 1rem;
+    margin: 0 auto 1rem;
     line-height: 3.875rem;
   }
   .pricing-blocks {
@@ -564,6 +567,7 @@ button {
   }
   .block-content {
     padding: 1.25rem 2rem 1.5rem;
+    margin-bottom: -0.5rem;
   }
   .block-content .block-content--main {
     display: flex;
@@ -585,6 +589,7 @@ button {
     margin: 0;
   }
   .block-content ul {
+    padding-left: 0;
     padding-right: 0;
   }
   .block-content button {
@@ -594,7 +599,7 @@ button {
   }
   .third-block {
     margin-top: 3.625rem;
-    margin-bottom: 3.5rem;
+    margin-bottom: 4.5rem;
   }
   .third-block .block-content .block-content--main h1 {
     font-size: 2.25rem;
@@ -628,54 +633,57 @@ button {
   align-items: center;
   padding: 2rem 0 1rem;
 }
-.footer-content img {
+.footer-content .left-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.footer-content .left-block img {
   padding-bottom: 1rem;
 }
-.footer-content button {
+.footer-content .left-block button {
   width: 100%;
   background: linear-gradient(to right, #00ad6a, #1fe374);
   padding: 1rem 2rem;
   border: none;
 }
-.footer-content button a {
+.footer-content .left-block button a {
   font-size: 1rem;
   font-family: "Work Sans", sans-serif;
   font-weight: 700;
   color: #080c16;
 }
-
-.footer-blocks {
-  display: flex;
-  flex-wrap: wrap;
+.footer-content .right-block {
   width: 100%;
+}
+.footer-content .right-block .footer-blocks {
+  width: 120%;
+  display: flex;
+  flex-direction: row;
   margin-top: 2.5rem;
 }
-.footer-blocks ul {
+.footer-content .right-block .footer-blocks ul {
   list-style: none;
 }
-.footer-blocks li {
+.footer-content .right-block .footer-blocks li {
   margin-bottom: 0.5rem;
 }
-
-.footer-block--items {
-  flex: 33.33%;
+.footer-content .right-block .footer-block--items {
+  flex: 33%;
+  padding: 0 1rem;
 }
-.footer-block--items li.pl-1 {
-  padding-left: 1rem;
-}
-
-.footer-item--title {
+.footer-content .right-block .footer-item--title {
   font-size: 0.875rem;
   font-weight: 700;
   color: #fcfcfc;
 }
-
-.footer-item--subtitle {
+.footer-content .right-block .footer-item--subtitle {
   font-size: 0.875rem;
   font-weight: 400;
   color: #1fe374;
 }
-.footer-item--subtitle:hover {
+.footer-content .right-block .footer-item--subtitle:hover {
   color: #080c16;
 }
 
@@ -769,4 +777,4 @@ button {
     margin: 0;
     padding: 0.75rem 0;
   }
-}
+}/*# sourceMappingURL=style.css.map */

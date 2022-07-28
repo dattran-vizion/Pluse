@@ -195,6 +195,7 @@ button {
       list-style: none;
       font-size: 1rem;
       font-weight: 700;
+      line-height: 1.5rem;
       color: $darkGreen;
       cursor: pointer;
 
@@ -204,7 +205,7 @@ button {
         color: $darkGreen;
         background-color: $lightAquamarine;
         border: 2px solid $darkGreen;
-        padding: 0.25rem 1rem;
+        padding: 0.4rem 1rem;
       }
 
       &:hover {
