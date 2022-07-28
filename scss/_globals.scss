@@ -40,6 +40,10 @@ a {
   overflow-y: hidden;
 }
 
+.container-fluid {
+  width: 100vw;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -71,7 +75,7 @@ a {
   }
 }
 
-.bg-white--fqa {
+.bg-white--faq {
   background-color: $white;
 }
 

@@ -27,7 +27,11 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 2.5rem;
+
+  ul {
+    list-style: none;
+  }
 
   li {
     margin-bottom: 0.5rem;
@@ -36,6 +40,9 @@
 
 .footer-block--items {
   flex: 33.33%;
+  li.pl-1 {
+    padding-left: 1rem;
+  }
 }
 .footer-item--title {
   font-size: 0.875rem;
@@ -45,8 +52,8 @@
 
 .footer-item--subtitle {
   font-size: 0.875rem;
-  font-weight: 700;
-  color: $darkGreen;
+  font-weight: 400;
+  color: $lightGreen;
 
   &:hover {
     color: $black;
@@ -76,7 +83,91 @@
     padding: 6rem 0;
 
     img {
-      width: 134.45%;
+      width: 10rem;
+      height: auto;
     }
+
+    button {
+      width: 20rem;
+    }
+  }
+
+  .footer-blocks {
+    margin-top: 3rem;
+
+    ul {
+      padding: 0 1rem;
+    }
+
+    ul.ul-padding {
+      padding: 0;
+    }
+
+    li {
+      padding-bottom: 0.5rem;
+    }
+  }
+
+  .footer-item--title,
+  .footer-item--subtitle {
+    font-size: 1.125rem;
+  }
+
+  .copyright {
+    margin-top: 0;
+    padding-bottom: 0.75rem;
+  }
+}
+
+@include desktop {
+  .footer-content {
+    padding: 6rem 0;
+    display: flex;
+    flex-direction: row;
+
+    .left-block,
+    .right-block {
+      flex: 50%;
+    }
+
+    .right-block {
+      align-self: flex-start;
+    }
+
+    img {
+      display: block;
+      width: 10rem;
+      height: auto;
+      margin-bottom: 3rem;
+    }
+
+    button {
+      width: auto;
+      display: block;
+      padding: 1rem 2rem;
+    }
+  }
+
+  .footer-blocks {
+    margin: 0;
+
+    .footer-block--items {
+      padding: 0 1rem;
+    }
+
+    li {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .footer-item--title,
+  .footer-item--subtitle {
+    line-height: 27px;
+    font-size: 1.125rem;
+  }
+
+  .copyright {
+    margin: 0;
+    padding: 0.75rem 0;
   }
 }

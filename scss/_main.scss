@@ -82,49 +82,48 @@
 
   .block-content--main {
     width: 100%;
-    font-size: 1rem;
     padding-bottom: 1rem;
 
     h1 {
       color: $darkGreen;
-      font-size: 2.25em;
+      font-size: 2.25rem;
       letter-spacing: -1.5px;
     }
 
     h6 {
       color: #83858a;
-      font-size: 1.5em;
+      font-size: 1.5rem;
       font-weight: 400;
-      margin: 0.5em 0;
+      margin: 0.5rem 0;
     }
 
     p {
       color: #464951;
-      font-size: 0.75em;
+      font-size: 0.75rem;
       font-weight: 900;
-      margin-top: 2em;
+      margin-top: 2rem;
       letter-spacing: 1.5px;
       text-transform: uppercase;
     }
   }
 
   ul {
-    padding: 0 1em 1em;
+    padding: 0 1rem 1rem;
     list-style-image: url(../images/icon-check-bullet.svg);
   }
 
   li {
     color: $black;
-    font-size: 1em;
-    padding: 0.5em 0;
+    font-size: 1rem;
+    padding: 0.5rem 0;
   }
 
   button {
     width: 100%;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     font-weight: 700;
     font-family: "Work Sans", sans-serif;
-    padding: 0.5em 1em 0.75em;
+    padding: 0.5rem 1rem 0.75rem;
     background-color: $lightGreen;
     border: none;
     margin-top: 1rem;
@@ -139,7 +138,7 @@
   color: $black;
   background-color: #f0f4f3;
   text-align: center;
-  font-size: 0.875em;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.1375rem;
   padding: 1rem;
@@ -177,7 +176,7 @@
   }
 }
 
-.fqa {
+.faq {
   padding: 3rem 0 2rem;
 
   h2 {
@@ -188,7 +187,7 @@
   }
 }
 
-.fqa-blocks {
+.faq-blocks {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -254,7 +253,121 @@
     }
   }
 
-  .fqa-blocks {
+  .faq-blocks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -14px;
+    margin-right: -14px;
+
+    .block-item {
+      align-self: start;
+      flex: 50%;
+      width: 50%;
+      padding: 1.5rem 1rem;
+    }
+  }
+}
+
+@include desktop {
+  .first-content--padding {
+    padding: 0;
+  }
+
+  .first-content {
+    text-align: center;
+    margin: 0 20rem 5rem;
+
+    h1 {
+      font-size: 3.75rem;
+      margin-bottom: 1rem;
+      line-height: 3.875rem;
+    }
+  }
+
+  .pricing-blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .first-block,
+  .second-block,
+  .third-block {
+    flex: 33.33%;
+  }
+
+  .first-block {
+    margin-top: 7.75rem;
+    padding-left: 2.5rem;
+    padding-right: 4.5rem;
+
+    ul {
+      margin-left: 1rem;
+    }
+  }
+
+  .block-content {
+    padding: 1.25rem 2rem 1.5rem;
+
+    .block-content--main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+
+      h1 {
+        margin: 1rem 2rem 0;
+        text-align: center;
+        font-size: 3rem;
+        line-height: 1;
+      }
+
+      h6 {
+        margin-top: 0.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+
+    ul {
+      padding-right: 0;
+    }
+
+    button {
+      margin: 0 0 2rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  .third-block {
+    margin-top: 3.625rem;
+    margin-bottom: 3.5rem;
+
+    .block-content .block-content--main h1 {
+      font-size: 2.25rem;
+    }
+  }
+
+  .slogan {
+    h1 {
+      margin: 0 10rem;
+    }
+  }
+
+  .faq {
+    padding: 6rem 0;
+
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
+  .faq-blocks {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

@@ -40,6 +40,10 @@ a {
   overflow-y: hidden;
 }
 
+.container-fluid {
+  width: 100vw;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -73,7 +77,7 @@ a {
   }
 }
 
-.bg-white--fqa {
+.bg-white--faq {
   background-color: #fcfcfc;
 }
 
@@ -368,43 +372,42 @@ button {
 }
 .block-content .block-content--main {
   width: 100%;
-  font-size: 1rem;
   padding-bottom: 1rem;
 }
 .block-content .block-content--main h1 {
   color: #00ad6a;
-  font-size: 2.25em;
+  font-size: 2.25rem;
   letter-spacing: -1.5px;
 }
 .block-content .block-content--main h6 {
   color: #83858a;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 400;
-  margin: 0.5em 0;
+  margin: 0.5rem 0;
 }
 .block-content .block-content--main p {
   color: #464951;
-  font-size: 0.75em;
+  font-size: 0.75rem;
   font-weight: 900;
-  margin-top: 2em;
+  margin-top: 2rem;
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
 .block-content ul {
-  padding: 0 1em 1em;
+  padding: 0 1rem 1rem;
   list-style-image: url(../images/icon-check-bullet.svg);
 }
 .block-content li {
   color: #080c16;
-  font-size: 1em;
-  padding: 0.5em 0;
+  font-size: 1rem;
+  padding: 0.5rem 0;
 }
 .block-content button {
   width: 100%;
-  font-size: 1.25em;
+  font-size: 1.25rem;
   font-weight: 700;
   font-family: "Work Sans", sans-serif;
-  padding: 0.5em 1em 0.75em;
+  padding: 0.5rem 1rem 0.75rem;
   background-color: #1fe374;
   border: none;
   margin-top: 1rem;
@@ -418,7 +421,7 @@ button {
   color: #080c16;
   background-color: #f0f4f3;
   text-align: center;
-  font-size: 0.875em;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.1375rem;
   padding: 1rem;
@@ -454,32 +457,32 @@ button {
   font-weight: 700;
 }
 
-.fqa {
+.faq {
   padding: 3rem 0 2rem;
 }
-.fqa h2 {
+.faq h2 {
   font-size: 2.25rem;
   letter-spacing: -2px;
   color: #080c16;
   margin-bottom: 1rem;
 }
 
-.fqa-blocks {
+.faq-blocks {
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
 }
-.fqa-blocks .block-item {
+.faq-blocks .block-item {
   padding: 1.5rem 0;
 }
-.fqa-blocks .block-item h4 {
+.faq-blocks .block-item h4 {
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.4375rem;
   font-weight: 700;
 }
-.fqa-blocks .block-item p {
+.faq-blocks .block-item p {
   font-size: 1.125rem;
   line-height: 1.6875rem;
 }
@@ -514,14 +517,105 @@ button {
     display: inline-block;
     padding-left: 0.5rem;
   }
-  .fqa-blocks {
+  .faq-blocks {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: -14px;
     margin-right: -14px;
   }
-  .fqa-blocks .block-item {
+  .faq-blocks .block-item {
+    align-self: start;
+    flex: 50%;
+    width: 50%;
+    padding: 1.5rem 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .first-content--padding {
+    padding: 0;
+  }
+  .first-content {
+    text-align: center;
+    margin: 0 20rem 5rem;
+  }
+  .first-content h1 {
+    font-size: 3.75rem;
+    margin-bottom: 1rem;
+    line-height: 3.875rem;
+  }
+  .pricing-blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .first-block,
+.second-block,
+.third-block {
+    flex: 33.33%;
+  }
+  .first-block {
+    margin-top: 7.75rem;
+    padding-left: 2.5rem;
+    padding-right: 4.5rem;
+  }
+  .first-block ul {
+    margin-left: 1rem;
+  }
+  .block-content {
+    padding: 1.25rem 2rem 1.5rem;
+  }
+  .block-content .block-content--main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .block-content .block-content--main h1 {
+    margin: 1rem 2rem 0;
+    text-align: center;
+    font-size: 3rem;
+    line-height: 1;
+  }
+  .block-content .block-content--main h6 {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .block-content .block-content--main p {
+    margin: 0;
+  }
+  .block-content ul {
+    padding-right: 0;
+  }
+  .block-content button {
+    margin: 0 0 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .third-block {
+    margin-top: 3.625rem;
+    margin-bottom: 3.5rem;
+  }
+  .third-block .block-content .block-content--main h1 {
+    font-size: 2.25rem;
+  }
+  .slogan h1 {
+    margin: 0 10rem;
+  }
+  .faq {
+    padding: 6rem 0;
+  }
+  .faq h2 {
+    font-size: 3rem;
+  }
+  .faq-blocks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -14px;
+    margin-right: -14px;
+  }
+  .faq-blocks .block-item {
     align-self: start;
     flex: 50%;
     width: 50%;
@@ -554,7 +648,10 @@ button {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 2.5rem;
+}
+.footer-blocks ul {
+  list-style: none;
 }
 .footer-blocks li {
   margin-bottom: 0.5rem;
@@ -562,6 +659,9 @@ button {
 
 .footer-block--items {
   flex: 33.33%;
+}
+.footer-block--items li.pl-1 {
+  padding-left: 1rem;
 }
 
 .footer-item--title {
@@ -572,8 +672,8 @@ button {
 
 .footer-item--subtitle {
   font-size: 0.875rem;
-  font-weight: 700;
-  color: #00ad6a;
+  font-weight: 400;
+  color: #1fe374;
 }
 .footer-item--subtitle:hover {
   color: #080c16;
@@ -600,6 +700,73 @@ button {
     padding: 6rem 0;
   }
   .footer-content img {
-    width: 134.45%;
+    width: 10rem;
+    height: auto;
   }
-}/*# sourceMappingURL=style.css.map */
+  .footer-content button {
+    width: 20rem;
+  }
+  .footer-blocks {
+    margin-top: 3rem;
+  }
+  .footer-blocks ul {
+    padding: 0 1rem;
+  }
+  .footer-blocks ul.ul-padding {
+    padding: 0;
+  }
+  .footer-blocks li {
+    padding-bottom: 0.5rem;
+  }
+  .footer-item--title,
+.footer-item--subtitle {
+    font-size: 1.125rem;
+  }
+  .copyright {
+    margin-top: 0;
+    padding-bottom: 0.75rem;
+  }
+}
+@media (min-width: 1024px) {
+  .footer-content {
+    padding: 6rem 0;
+    display: flex;
+    flex-direction: row;
+  }
+  .footer-content .left-block,
+.footer-content .right-block {
+    flex: 50%;
+  }
+  .footer-content .right-block {
+    align-self: flex-start;
+  }
+  .footer-content img {
+    display: block;
+    width: 10rem;
+    height: auto;
+    margin-bottom: 3rem;
+  }
+  .footer-content button {
+    width: auto;
+    display: block;
+    padding: 1rem 2rem;
+  }
+  .footer-blocks {
+    margin: 0;
+  }
+  .footer-blocks .footer-block--items {
+    padding: 0 1rem;
+  }
+  .footer-blocks li {
+    margin-bottom: 1rem;
+  }
+  .footer-item--title,
+.footer-item--subtitle {
+    line-height: 27px;
+    font-size: 1.125rem;
+  }
+  .copyright {
+    margin: 0;
+    padding: 0.75rem 0;
+  }
+}
