@@ -42,13 +42,14 @@ a {
 
 .container-fluid {
   width: 100vw;
+  border-top: 1px solid #d6dbe5;
 }
 
 .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 24px;
 }
 
 .hidden {

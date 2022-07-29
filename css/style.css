@@ -42,13 +42,14 @@ a {
 
 .container-fluid {
   width: 100vw;
+  border-top: 1px solid #d6dbe5;
 }
 
 .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 24px;
 }
 
 .hidden {
@@ -354,13 +355,13 @@ button {
   margin-bottom: 1rem;
 }
 .first-block li {
-  color: #080c16;
+  color: #464951;
   font-size: 1rem;
   line-height: 1.5rem;
   text-align: left;
 }
 .first-block p {
-  color: #080c16;
+  color: #464951;
   font-size: 1rem;
   line-height: 1.5rem;
 }
@@ -377,40 +378,48 @@ button {
 }
 
 .block-banner {
-  color: #fcfcfc;
+  color: #fff;
   background-color: #00ad6a;
   text-align: center;
   text-transform: uppercase;
   font-size: 0.75rem;
   font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.5;
   padding: 0.5rem 0;
 }
 
 .block-content {
   padding: 1rem;
-  background-color: #fcfcfc;
+  background-color: #fff;
 }
 .block-content .block-content--main {
   width: 100%;
   padding-bottom: 1rem;
 }
 .block-content .block-content--main h1 {
+  display: inline-block;
   color: #00ad6a;
   font-size: 2.25rem;
   letter-spacing: -1.5px;
+  line-height: 1;
 }
 .block-content .block-content--main h6 {
+  display: inline-block;
   color: #83858a;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  letter-spacing: -0.5px;
   font-weight: 400;
   margin: 0.5rem 0;
 }
 .block-content .block-content--main p {
   color: #464951;
   font-size: 0.75rem;
-  font-weight: 900;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.15;
   margin-top: 2rem;
-  letter-spacing: 1.5px;
   text-transform: uppercase;
 }
 .block-content ul {
@@ -418,15 +427,24 @@ button {
   list-style-image: url(../images/icon-check-bullet.svg);
 }
 .block-content li {
-  color: #080c16;
+  color: #464951;
   font-size: 1rem;
+  line-height: 1.15;
   letter-spacing: -0.5px;
-  padding: 0.5rem 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.block-content li span {
+  position: relative;
+  left: -4px;
 }
 .block-content button {
+  color: #464951;
   width: 100%;
   font-size: 1.25rem;
   font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
   font-family: "Work Sans", sans-serif;
   padding: 0.5rem 1rem 0.75rem;
   background-color: #1fe374;
@@ -439,8 +457,8 @@ button {
 }
 
 .block-banner--second {
-  color: #080c16;
-  background-color: #f0f4f3;
+  color: #464951;
+  background-color: #f2f3f3;
   text-align: center;
   font-size: 0.875rem;
   font-weight: 400;
@@ -465,6 +483,7 @@ button {
   padding: 3rem 0;
 }
 .slogan h1 {
+  color: #080c16;
   font-size: 1.5rem;
   padding: 1rem 0;
   font-weight: 400;
@@ -474,6 +493,8 @@ button {
 .slogan p {
   color: #00ad6a;
   font-size: 0.75rem;
+  letter-spacing: 1px;
+  line-height: 1.5;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -498,12 +519,14 @@ button {
   padding: 1.5rem 0;
 }
 .faq-blocks .block-item h4 {
+  color: #080c16;
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.4375rem;
   font-weight: 700;
 }
 .faq-blocks .block-item p {
+  color: #464951;
   font-size: 1.125rem;
   line-height: 1.6875rem;
 }
@@ -666,7 +689,9 @@ button {
   width: 100%;
 }
 .footer-content .left-block img {
-  padding-bottom: 1rem;
+  width: 128px;
+  height: 52.7px;
+  margin-bottom: 1.13rem;
 }
 .footer-content .left-block button {
   width: 100%;
@@ -677,6 +702,7 @@ button {
 .footer-content .left-block button a {
   font-size: 1rem;
   font-family: "Work Sans", sans-serif;
+  line-height: 1.5;
   font-weight: 700;
   color: #080c16;
 }
@@ -687,7 +713,7 @@ button {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 2.5rem -1rem 0 -1rem;
+  margin: 2.75rem -1rem 0 -1rem;
 }
 .footer-content .right-block .footer-blocks ul {
   list-style: none;
@@ -705,6 +731,7 @@ button {
   font-weight: 400;
 }
 .footer-content .right-block .footer-item--title {
+  font-weight: 700;
   color: #fcfcfc;
 }
 .footer-content .right-block .footer-item--subtitle {
