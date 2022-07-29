@@ -55,6 +55,24 @@ a {
   display: none;
 }
 
+.xl-show {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .xl-show {
+    display: block;
+  }
+}
+
+.xl-hidden {
+  display: block;
+}
+@media (min-width: 1024px) {
+  .xl-hidden {
+    display: none;
+  }
+}
+
 .relative {
   position: relative;
 }
@@ -100,6 +118,7 @@ a {
   position: fixed;
   bottom: 22px;
   right: 22px;
+  z-index: 9999;
 }
 
 header {
@@ -547,6 +566,10 @@ button {
     margin: 0 auto 1rem;
     line-height: 3.875rem;
   }
+  .first-content p {
+    width: 37rem;
+    margin: 0 auto;
+  }
   .pricing-blocks {
     display: flex;
     flex-direction: row;
@@ -556,6 +579,10 @@ button {
 .second-block,
 .third-block {
     flex: 33.33%;
+  }
+  .second-block,
+.third-block {
+    background-color: #fcfcfc;
   }
   .first-block {
     margin-top: 7.75rem;
@@ -567,7 +594,6 @@ button {
   }
   .block-content {
     padding: 1.25rem 2rem 1.5rem;
-    margin-bottom: -0.5rem;
   }
   .block-content .block-content--main {
     display: flex;
@@ -658,10 +684,10 @@ button {
   width: 100%;
 }
 .footer-content .right-block .footer-blocks {
-  width: 120%;
   display: flex;
   flex-direction: row;
-  margin-top: 2.5rem;
+  flex-wrap: wrap;
+  margin: 2.5rem -1rem 0 -1rem;
 }
 .footer-content .right-block .footer-blocks ul {
   list-style: none;
@@ -673,14 +699,15 @@ button {
   flex: 33%;
   padding: 0 1rem;
 }
-.footer-content .right-block .footer-item--title {
-  font-size: 0.875rem;
-  font-weight: 700;
-  color: #fcfcfc;
-}
+.footer-content .right-block .footer-item--title,
 .footer-content .right-block .footer-item--subtitle {
   font-size: 0.875rem;
   font-weight: 400;
+}
+.footer-content .right-block .footer-item--title {
+  color: #fcfcfc;
+}
+.footer-content .right-block .footer-item--subtitle {
   color: #1fe374;
 }
 .footer-content .right-block .footer-item--subtitle:hover {
@@ -693,6 +720,7 @@ button {
 }
 .copyright p {
   font-size: 0.75rem;
+  line-height: 1.125rem;
   font-weight: 400;
   color: #83858a;
 }
@@ -702,7 +730,21 @@ button {
   color: #83858a;
   text-decoration: underline;
 }
+.copyright p a:hover {
+  color: #fcfcfc;
+}
 
+@media (min-width: 0px) and (max-width: 280px) {
+  .footer-block--items li {
+    margin-bottom: 0.5rem !important;
+  }
+  .footer-item--title,
+.footer-item--subtitle {
+    font-size: 1.125rem !important;
+    line-height: 1.6875rem;
+    font-weight: 400 !important;
+  }
+}
 @media (min-width: 768px) and (max-width: 1023px) {
   .footer-content {
     padding: 6rem 0;
@@ -712,7 +754,7 @@ button {
     height: auto;
   }
   .footer-content button {
-    width: 20rem;
+    width: 20rem !important;
   }
   .footer-blocks {
     margin-top: 3rem;
@@ -728,11 +770,18 @@ button {
   }
   .footer-item--title,
 .footer-item--subtitle {
-    font-size: 1.125rem;
+    font-size: 1.125rem !important;
+    font-weight: 700 !important;
+  }
+  .footer-item--title {
+    font-weight: 700 !important;
+  }
+  .footer-item--subtitle {
+    font-weight: 400 !important;
   }
   .copyright {
-    margin-top: 0;
-    padding-bottom: 0.75rem;
+    margin-top: 0 !important;
+    padding-bottom: 0.75rem !important;
   }
 }
 @media (min-width: 1024px) {
@@ -745,36 +794,38 @@ button {
 .footer-content .right-block {
     flex: 50%;
   }
-  .footer-content .right-block {
-    align-self: flex-start;
+  .footer-content .left-block {
+    align-items: flex-start;
   }
-  .footer-content img {
-    display: block;
+  .footer-content .left-block img {
     width: 10rem;
     height: auto;
+    padding-bottom: 0;
     margin-bottom: 3rem;
   }
-  .footer-content button {
+  .footer-content .left-block button {
     width: auto;
-    display: block;
     padding: 1rem 2rem;
   }
-  .footer-blocks {
+  .footer-content .right-block .footer-blocks {
     margin: 0;
   }
-  .footer-blocks .footer-block--items {
+  .footer-content .right-block .footer-blocks .footer-block--items {
     padding: 0 1rem;
   }
-  .footer-blocks li {
+  .footer-content .right-block .footer-blocks li {
     margin-bottom: 1rem;
   }
-  .footer-item--title,
-.footer-item--subtitle {
+  .footer-content .right-block .footer-item--title,
+.footer-content .right-block .footer-item--subtitle {
     line-height: 27px;
     font-size: 1.125rem;
+  }
+  .footer-content .right-block .footer-item--title {
+    font-weight: 700;
   }
   .copyright {
     margin: 0;
     padding: 0.75rem 0;
   }
-}/*# sourceMappingURL=style.css.map */
+}

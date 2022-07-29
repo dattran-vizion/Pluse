@@ -55,6 +55,22 @@ a {
   display: none;
 }
 
+.xl-show {
+  display: none;
+
+  @include desktop {
+    display: block;
+  }
+}
+
+.xl-hidden {
+  display: block;
+
+  @include desktop {
+    display: none;
+  }
+}
+
 .relative {
   position: relative;
 }
@@ -98,4 +114,5 @@ a {
   position: fixed;
   bottom: 22px;
   right: 22px;
+  z-index: 9999;
 }

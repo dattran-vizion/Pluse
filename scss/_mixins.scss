@@ -1,6 +1,13 @@
+$galaxyFold: 280px;
 $smallTablet-width: 620px;
 $tablet-width: 768px;
 $desktop-width: 1024px;
+
+@mixin galaxyFold {
+  @media (min-width: 0px) and (max-width: #{$galaxyFold}) {
+    @content;
+  }
+}
 
 @mixin smallTablet {
   @media (min-width: #{$smallTablet-width}) and (max-width: #{$tablet-width - 1px}) {

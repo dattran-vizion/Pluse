@@ -285,6 +285,11 @@
       margin: 0 auto 1rem;
       line-height: 3.875rem;
     }
+
+    p {
+      width: 37rem;
+      margin: 0 auto;
+    }
   }
 
   .pricing-blocks {
@@ -299,6 +304,11 @@
     flex: 33.33%;
   }
 
+  .second-block,
+  .third-block {
+    background-color: $white;
+  }
+
   .first-block {
     margin-top: 7.75rem;
     padding-left: 2.5rem;
@@ -311,7 +321,6 @@
 
   .block-content {
     padding: 1.25rem 2rem 1.5rem;
-    margin-bottom: -0.5rem;
 
     .block-content--main {
       display: flex;
