@@ -32,6 +32,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+}
+
 .overflow-x-hidden {
   overflow-x: hidden;
 }
@@ -113,7 +117,7 @@ a {
   padding: 0.6em 1.2em;
   border: 2px solid $white;
   position: fixed;
-  bottom: 22px;
-  right: 22px;
+  bottom: 20px;
+  right: 26px;
   z-index: 9999;
 }

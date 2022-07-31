@@ -32,6 +32,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+}
+
 .overflow-x-hidden {
   overflow-x: hidden;
 }
@@ -117,8 +121,8 @@ a {
   padding: 0.6em 1.2em;
   border: 2px solid #fcfcfc;
   position: fixed;
-  bottom: 22px;
-  right: 22px;
+  bottom: 20px;
+  right: 26px;
   z-index: 9999;
 }
 
@@ -149,6 +153,10 @@ nav {
   padding: 1rem 1.5rem;
 }
 
+.nav-border {
+  border-bottom: 1px solid #d6dae5;
+}
+
 .mobile-nav {
   opacity: 0;
   pointer-events: none;
@@ -170,27 +178,27 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
 }
 .menu-btn--hamburger {
-  width: 26px;
+  width: 32px;
   height: 2px;
   background-color: #00ad6a;
 }
 .menu-btn--hamburger::before, .menu-btn--hamburger::after {
   content: "";
   position: absolute;
-  width: 26px;
+  width: 32px;
   height: 2px;
   background-color: #00ad6a;
   transition: all 0.2s ease-in-out;
 }
 .menu-btn--hamburger::before {
-  transform: translateY(-8px);
+  transform: translateY(-9px);
 }
 .menu-btn--hamburger::after {
-  transform: translateY(8px);
+  transform: translateY(9px);
 }
 
 .isToggled .menu-btn--hamburger {
@@ -251,6 +259,9 @@ button {
 @media (min-width: 768px) and (max-width: 1023px) {
   .nav-padding {
     padding: 3rem 1.5rem;
+  }
+  .nav-border {
+    border-bottom: none;
   }
   .md-hidden {
     display: none;
@@ -317,18 +328,18 @@ button {
     margin-right: 2.5rem;
   }
 }
-.first-content--padding {
+.intro-content--padding {
   padding: 2rem 1.5rem 1rem;
 }
 
-.first-content h1 {
+.intro-content h1 {
   font-size: 3rem;
   font-weight: 700;
   letter-spacing: -2px;
   line-height: 3rem;
   margin-bottom: 3rem;
 }
-.first-content p {
+.intro-content p {
   font-size: 1.125rem;
   line-height: 1.6875rem;
   color: #080c16;
@@ -340,7 +351,7 @@ button {
 }
 
 .first-block {
-  padding: 0 1rem 2rem;
+  padding: 0 0.5rem 2rem;
 }
 .first-block h2 {
   color: #00ad6a;
@@ -371,7 +382,7 @@ button {
 }
 
 .second-block {
-  border: 1px solid #1fe374;
+  border: 1px solid #00ad6a;
   border-radius: 8px 8px 0 0;
   overflow: hidden;
   margin-bottom: 2rem;
@@ -411,7 +422,7 @@ button {
   line-height: 1;
   letter-spacing: -0.5px;
   font-weight: 400;
-  margin: 0.5rem 0;
+  margin: 0.5625rem 0 0.5rem 0;
 }
 .block-content .block-content--main p {
   color: #464951;
@@ -424,9 +435,10 @@ button {
 }
 .block-content ul {
   padding: 0 1rem 1rem;
-  list-style-image: url(../images/icon-check-bullet.svg);
+  list-style: none;
 }
 .block-content li {
+  position: relative;
   color: #464951;
   font-size: 1rem;
   line-height: 1.15;
@@ -434,9 +446,15 @@ button {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.block-content li span {
-  position: relative;
-  left: -4px;
+.block-content li::before {
+  content: "";
+  position: absolute;
+  left: -14px;
+  top: 14px;
+  width: 12px;
+  height: 12px;
+  background-image: url(../images/icon-check-bullet.svg);
+  background-repeat: no-repeat;
 }
 .block-content button {
   color: #464951;
@@ -504,9 +522,10 @@ button {
 }
 .faq h2 {
   font-size: 2.25rem;
+  line-height: 41px;
   letter-spacing: -2px;
   color: #080c16;
-  margin-bottom: 1rem;
+  margin-bottom: 1.0625rem;
 }
 
 .faq-blocks {
@@ -532,11 +551,13 @@ button {
 }
 
 @media (min-width: 620px) and (max-width: 767px) {
-  .block-content--main h1 {
+  .block-content .block-content--main h1 {
     display: inline-block;
   }
-  .block-content--main h6 {
+  .block-content .block-content--main h6 {
     display: inline-block;
+    font-size: 1.5rem;
+    line-height: 1;
     padding-left: 0.5rem;
   }
 }
@@ -691,7 +712,7 @@ button {
 .footer-content .left-block img {
   width: 128px;
   height: 52.7px;
-  margin-bottom: 1.13rem;
+  margin-bottom: 1.4rem;
 }
 .footer-content .left-block button {
   width: 100%;
@@ -713,13 +734,13 @@ button {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 2.75rem -1rem 0 -1rem;
+  margin: 2.4rem -1rem 0 -1rem;
 }
 .footer-content .right-block .footer-blocks ul {
   list-style: none;
 }
 .footer-content .right-block .footer-blocks li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.45rem;
 }
 .footer-content .right-block .footer-block--items {
   flex: 33%;
@@ -742,7 +763,7 @@ button {
 }
 
 .copyright {
-  margin-top: 2rem;
+  margin-top: 1.3rem;
   padding-bottom: 6rem;
 }
 .copyright p {
@@ -770,6 +791,24 @@ button {
     font-size: 1.125rem !important;
     line-height: 1.6875rem;
     font-weight: 400 !important;
+  }
+}
+@media (min-width: 620px) and (max-width: 767px) {
+  .footer-content .right-block .footer-blocks {
+    margin-top: 2.5rem;
+  }
+  .footer-content .right-block .footer-blocks li {
+    margin-bottom: 0.5rem;
+  }
+  .footer-content .right-block .footer-item--title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+  .footer-content .right-block .footer-item--subtitle {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -855,4 +894,4 @@ button {
     margin: 0;
     padding: 0.75rem 0;
   }
-}
+}/*# sourceMappingURL=style.css.map */

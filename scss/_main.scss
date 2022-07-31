@@ -1,8 +1,8 @@
-.first-content--padding {
+.intro-content--padding {
   padding: 2rem 1.5rem 1rem;
 }
 
-.first-content {
+.intro-content {
   h1 {
     font-size: 3rem;
     font-weight: 700;
@@ -24,7 +24,7 @@
 }
 
 .first-block {
-  padding: 0 1rem 2rem;
+  padding: 0 0.5rem 2rem;
 
   h2 {
     color: $darkGreen;
@@ -60,7 +60,7 @@
 }
 
 .second-block {
-  border: 1px solid $lightGreen;
+  border: 1px solid $darkGreen;
   border-radius: 8px 8px 0 0;
   overflow: hidden;
   margin-bottom: 2rem;
@@ -101,7 +101,7 @@
       line-height: 1;
       letter-spacing: -0.5px;
       font-weight: 400;
-      margin: 0.5rem 0;
+      margin: 0.5625rem 0 0.5rem 0;
     }
 
     p {
@@ -117,10 +117,11 @@
 
   ul {
     padding: 0 1rem 1rem;
-    list-style-image: url(../images/icon-check-bullet.svg);
+    list-style: none;
   }
 
   li {
+    position: relative;
     color: $textColor;
     font-size: 1rem;
     line-height: 1.15;
@@ -128,9 +129,15 @@
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 
-    span {
-      position: relative;
-      left: -4px;
+    &::before {
+      content: "";
+      position: absolute;
+      left: -14px;
+      top: 14px;
+      width: 12px;
+      height: 12px;
+      background-image: url(../images/icon-check-bullet.svg);
+      background-repeat: no-repeat;
     }
   }
 
@@ -203,9 +210,10 @@
 
   h2 {
     font-size: 2.25rem;
+    line-height: 41px;
     letter-spacing: -2px;
     color: $black;
-    margin-bottom: 1rem;
+    margin-bottom: 1.0625rem;
   }
 }
 
@@ -235,14 +243,18 @@
 }
 
 @include smallTablet {
-  .block-content--main {
-    h1 {
-      display: inline-block;
-    }
+  .block-content {
+    .block-content--main {
+      h1 {
+        display: inline-block;
+      }
 
-    h6 {
-      display: inline-block;
-      padding-left: 0.5rem;
+      h6 {
+        display: inline-block;
+        font-size: 1.5rem;
+        line-height: 1;
+        padding-left: 0.5rem;
+      }
     }
   }
 }

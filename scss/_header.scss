@@ -25,6 +25,10 @@ nav {
   padding: 1rem 1.5rem;
 }
 
+.nav-border {
+  border-bottom: 1px solid $whiteGray;
+}
+
 .mobile-nav {
   opacity: 0;
   pointer-events: none;
@@ -46,11 +50,11 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
 
   &--hamburger {
-    width: 26px;
+    width: 32px;
     height: 2px;
     background-color: $darkGreen;
   }
@@ -59,18 +63,18 @@ nav {
   &--hamburger::after {
     content: "";
     position: absolute;
-    width: 26px;
+    width: 32px;
     height: 2px;
     background-color: $darkGreen;
     transition: all 0.2s ease-in-out;
   }
 
   &--hamburger::before {
-    transform: translateY(-8px);
+    transform: translateY(-9px);
   }
 
   &--hamburger::after {
-    transform: translateY(8px);
+    transform: translateY(9px);
   }
 }
 
@@ -139,6 +143,10 @@ button {
 @include tablet {
   .nav-padding {
     padding: 3rem 1.5rem;
+  }
+
+  .nav-border {
+    border-bottom: none;
   }
 
   .md-hidden {
