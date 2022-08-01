@@ -190,6 +190,10 @@ button {
     padding: 3rem 1.5rem;
   }
 
+  .nav-border {
+    border-bottom: none;
+  }
+
   .md-hidden {
     display: none;
   }
@@ -213,7 +217,7 @@ button {
         color: $darkGreen;
         background-color: $lightAquamarine;
         border: 2px solid $darkGreen;
-        padding: 0.4rem 1rem;
+        padding: 0.45rem 1rem;
       }
 
       &:hover {
